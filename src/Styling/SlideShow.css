@@ -1,0 +1,84 @@
+.showcase {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: var(--primary-color) url('../UI/logo.jpeg') no repeat center center/cover;
+}
+
+.video-container video {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.video-container:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.content {
+    z-index: 10;
+}
+
+.animateIt {
+    animation-duration: 2s;
+    animation-name: slidein;
+    color: black;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 200%;
+    }
+    75% {
+        font-size: 300%;
+        margin-left: 25%;
+        width: 150%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+.btns {
+    display: inline-block;
+    padding: 10px 30px;
+    background: var(--primary-color);
+    color: black;
+    border: 1px black solid;
+    border-radius: 5px;
+    opacity: 0.9;
+}
+
+.btns:hover {
+    color: black;
+    border:initial;
+    background-color: white;
+    transform: scale(0.8);
+    transition: 0.5s linear;
+}

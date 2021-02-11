@@ -1,0 +1,27 @@
+.inputStyle {
+    height: 58px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+#submit {
+    background-color: #0275d8;
+    color: white;
+    border-radius: 2px 2px 2px 2px;
+    font-size: 17px;
+    margin-left: 75%;
+    font-weight: lighter;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#submit:hover {
+    background-color: #ffffff;
+    color: #0275d8;
+    transition: 0.5s linear;
+}
+
+@media all and (max-width:770px) {
+    #submit {
+        margin-left: 25%;
+    }
+}

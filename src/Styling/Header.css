@@ -1,0 +1,82 @@
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+  pointer-events: none;
+}
+
+#navbarSupportedContent {
+
+
+  margin-left: 3%;
+}
+
+
+
+
+.navbar-brand {
+  margin-left: 15%;
+}
+
+.logo {
+  width: 200px;
+}
+
+.navbar {
+  opacity: 1;
+  transition: 0.4s linear;
+  background-color: white;
+}
+
+.navbar:hover {
+  transition: 0.4s ease-in;
+  opacity: 1;
+}
+
+/* For the effects when the scrolling starts */
+
+html:not([data-scroll="0"]) body {
+  padding-top: 3em;
+}
+
+html:not([data-scroll="0"]) .navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* background-color: #fff; */
+  opacity: 1;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
+  transition: 0.4s linear;
+}
+
+/* For the effects when the scrolling starts */
+
+#navbarSupportedContent .navbar-nav .nav-item .nav-link {
+  color: black;
+  text-align: center;
+  border: none;
+  font-weight: normal;
+}
+
+#navbarSupportedContent .navbar-nav .nav-item .nav-link:hover {
+
+  border: 1px solid rgb(64, 74, 214);
+  color:rgb(64, 74, 214);
+  border-radius: 15px 15px 15px 15px;
+  transition: 0.5s linear;
+}
+body {
+  background-color: white;
+  color: #18191a;
+}
+
+@media all and (max-width:600px)
+{
+  #navbarSupportedContent .navbar-nav .nav-item .nav-link:hover {
+    border:initial;
+    border-radius:initial;
+  
+  } 
+}

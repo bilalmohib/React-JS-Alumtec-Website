@@ -1,0 +1,14 @@
+#aboutuspagebtn
+{
+    background-color: #0275d8;
+    color: white;
+    border-radius: 2px 2px 2px 2px;
+    font-size: 17px;
+    font-weight: lighter;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#aboutuspagebtn:hover{
+    background-color: #ffffff;
+    color: #0275d8;
+    transition: 0.5s linear;
+}
